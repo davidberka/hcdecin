@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HC DĚČÍN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/styles.css" />
+  </head>
+  <body>
+    <header class="bg-main-blue border-b-2 border-main-red h-20">
+      <div class="h-full flex items-center justify-between px-3">
+        <div class="h-24 flex items-center justify-center shadow-sm bg-white p-3">
+          <img class="h-5/6 w-auto object-contain" src="../images/logo.png" alt="logo">
+        </div>
+        <nav class="hidden">
+          <ul>
+            <li>INFORMACE</li>
+            <li>A-MUŽSTVO</li>
+            <li>MLÁDEŽ</li>
+            <li>NÁBOR</li>
+            <li>ARCHIV</li>
+            <li>KONTAKT</li>
+          </ul>
+        </nav>
+        <div class="hidden">
+          <div>
+            <input type="text">
+            <img src="../images/search.png" alt="search-icon">
+          </div>
+          <a href="#" target="_blank">
+            <img src="../images/fb.png" alt="social-icon">
+            <span>FACEBOOK</span>
+          </a>
+        </div>
+        <div class="burger px-3">
+          <div class="w-8 h-1 bg-white rounded"></div>
+          <div class="w-8 h-1 bg-white my-2 rounded"></div>
+          <div class="w-8 h-1 bg-white rounded"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="bg-gray-100 text-white">
+        <div class="px-3 py-8 flex flex-col space-y-3">
+          <div class="article relative flex items-end h-64">
+            <img class="absolute h-full w-full inset-0 object-cover" src="../images/clanek1.jpg" alt="clanek-bg">
+            <div class="z-20 relative p-3">
+              <span class="p-2 text-sm rounded font-bold bg-main-red">18.9.2021</span>
+              <h4 class="mt-2 uppercase"><a href="#">DRUHÝ DOMÁCÍ ZÁPAS OPĚT BEZ BODŮ, VLCI VYLOUPILI DĚČÍNSKÝ LED</a></h4>
+            </div>
+          </div>
+          <div class="article relative flex items-end h-64">
+            <img class="absolute h-full w-full inset-0 object-cover" src="../images/clanek2.jpg" alt="clanek-bg">
+            <div class="z-20 relative p-3">
+              <span class="p-2 text-sm rounded font-bold bg-main-red">18.9.2021</span>
+              <h4 class="mt-2 uppercase"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></h4>
+            </div>
+          </div>
+          <div class="article relative flex items-end h-64">
+            <img class="absolute h-full w-full inset-0 object-cover" src="../images/clanek3.jpg" alt="clanek-bg">
+            <div class="z-20 relative p-3">
+              <span class="p-2 text-sm rounded font-bold bg-main-red">18.9.2021</span>
+              <h4 class="mt-2 uppercase"><a href="#">LETCI POTVRDILI LÍDRA TABULKY, DĚČÍN PORAZILI 4:1</a></h4>
+            </div>
+          </div>
+        </div>
+      </section> 
+    </main>
+  </body>
+</html>
