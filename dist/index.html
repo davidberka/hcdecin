@@ -12,32 +12,47 @@
     <link rel="stylesheet" href="../src/styles.css" />
   </head>
   <body>
-    <header class="bg-main-blue border-b-2 border-main-red h-20">
-      <div class="h-full flex items-center justify-between px-3">
-        <a href="index.html" class="h-24 flex items-center justify-center transition-shadow shadow-sm hover:shadow-lg bg-white p-3">
+    <header class="bg-main-blue border-b-2 border-main-red h-20 2xl:h-22">
+      <div class="h-full flex items-center justify-between px-3 xl:w-5/6 xl:mx-auto 3xl:w-3/4">
+        <a href="index.html" class="h-24 flex items-center justify-center transition-shadow shadow-sm hover:shadow-lg bg-white p-3 2xl:h-28">
           <img class="h-5/6 w-auto object-contain" src="../images/logo.png" alt="logo">
         </a>
         <nav class="navigation">
-          <ul class="flex flex-col space-y-4">
+          <ul class="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-3 xl:space-x-8 2xl:space-x-12">
             <li class="nav_link"><a href="#">INFORMACE</a></li>
-            <li class="nav_link"><a href="#">A-MUŽSTVO</a></li>
+            <li class="nav_link group">
+              <a href="#">A-MUŽSTVO</a>
+              <ul class="dropdown_menu">
+                  <li>
+                    <a href="#">Soupiska</a>
+                  </li>
+                  <li>
+                    <a href="#">Realizační tým</a>
+                  </li>
+                  <li>
+                    <a href="#">Zápasy</a>
+                  </li>
+                </ul>
+            </li>
             <li class="nav_link"><a href="#">MLÁDEŽ</a></li>
             <li class="nav_link"><a href="#">NÁBOR</a></li>
             <li class="nav_link"><a href="#">ARCHIV</a></li>
             <li class="nav_link"><a href="#">KONTAKT</a></li>
           </ul>
         </nav>
-        <div class="hidden">
-          <div>
-            <input type="text">
-            <img src="../images/search.png" alt="search-icon">
+        <div class="hidden lg:flex lg:space-x-3 lg:items-center">
+          <div class="flex items-center">
+            <input class="search_input" type="text">
+            <button class="search_btn cursor-pointer">
+              <img class="w-5 h-5" loading="lazy" src="../images/search.png" alt="search-icon" />
+            </button>
           </div>
-          <a href="#" target="_blank">
-            <img src="../images/fb.png" alt="social-icon">
-            <span>FACEBOOK</span>
+          <a class="flex items-center space-x-1" href="#" target="_blank">
+            <img class="w-5 h-5 transition-transform hover:scale-105" src="../images/fb.png" alt="social-icon">
+            <span class="text-main-red font-bold text-xs">FACEBOOK</span>
           </a>
         </div>
-        <div class="burger px-3">
+        <div class="burger">
           <div class="w-8 h-1 bg-white rounded"></div>
           <div class="w-8 h-1 bg-white my-2 rounded"></div>
           <div class="w-8 h-1 bg-white rounded"></div>
@@ -46,34 +61,34 @@
     </header>
     <main>
       <section class="bg-gray-100 text-white">
-        <div class="px-3 py-8 flex flex-col space-y-3 md:space-y-0 md:grid md:grid-cols-2 md:gap-4">
-          <div class="article relative flex items-end h-64">
+        <div class="px-3 py-8 2xl:py-10 flex flex-col space-y-3 md:space-y-0 md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-top-articles xl:w-5/6 xl:mx-auto 2xl:gap-6 3xl:w-3/4">
+          <div class="article relative flex items-end h-64 2xl:h-80">
             <img class="absolute h-full w-full inset-0 object-cover" src="../images/clanek1.jpg" alt="clanek-bg">
-            <div class="z-20 relative p-3">
-              <span class="p-2 text-sm rounded font-bold bg-main-red">18.9.2021</span>
-              <h4 class="mt-2 uppercase"><a href="#">DRUHÝ DOMÁCÍ ZÁPAS OPĚT BEZ BODŮ, VLCI VYLOUPILI DĚČÍNSKÝ LED</a></h4>
+            <div class="z-20 relative p-3 xl:p-9">
+              <span class="top_article_span p-2 text-sm rounded font-bold bg-main-red">18.9.2021</span>
+              <h4 class="mt-2 2xl:mt-4 uppercase hover:underline"><a href="#">DRUHÝ DOMÁCÍ ZÁPAS OPĚT BEZ BODŮ, VLCI VYLOUPILI DĚČÍNSKÝ LED</a></h4>
             </div>
           </div>
-          <div class="article relative flex items-end h-64">
+          <div class="article relative flex items-end h-64 2xl:h-80">
             <img class="absolute h-full w-full inset-0 object-cover" src="../images/clanek2.jpg" alt="clanek-bg">
-            <div class="z-20 relative p-3">
-              <span class="p-2 text-sm rounded font-bold bg-main-red">18.9.2021</span>
-              <h4 class="mt-2 uppercase"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></h4>
+            <div class="z-20 relative p-3 xl:p-6">
+              <span class="top_article_span p-2 text-sm rounded font-bold bg-main-red">18.9.2021</span>
+              <h6 class="mt-2 uppercase hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></h6>
             </div>
           </div>
-          <div class="article relative flex items-end h-64">
+          <div class="article relative flex items-end h-64 2xl:h-80">
             <img class="absolute h-full w-full inset-0 object-cover" src="../images/clanek3.jpg" alt="clanek-bg">
-            <div class="z-20 relative p-3">
-              <span class="p-2 text-sm rounded font-bold bg-main-red">18.9.2021</span>
-              <h4 class="mt-2 uppercase"><a href="#">LETCI POTVRDILI LÍDRA TABULKY, DĚČÍN PORAZILI 4:1</a></h4>
+            <div class="z-20 relative p-3 xl:p-6">
+              <span class="top_article_span p-2 text-sm rounded font-bold bg-main-red">18.9.2021</span>
+              <h6 class="mt-2 uppercase hover:underline"><a href="#">LETCI POTVRDILI LÍDRA TABULKY, DĚČÍN PORAZILI 4:1</a></h6>
             </div>
           </div>
         </div>
       </section> 
       <section class="bg-white drop-shadow-md">
-        <div class="matches px-3 py-8">
+        <div class="matches px-3 py-8 2xl:py-10 xl:w-5/6 xl:mx-auto 3xl:w-3/4">
           <div>
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center lg:border-r-2 lg:border-gray-200">
               <span class="text-sm text-main-blue">2. liga – Sever | 2.10.2021 18:00 | 5. kolo</span>
               <div class="w-full md:w-3/4 md:mx-auto flex items-center justify-between mt-2">
                 <img class="w-20 h-20 object-contain" src="../images/logo.png" alt="team-logo">
@@ -84,14 +99,14 @@
                 <img class="w-20 h-20 object-contain" src="../images/JAB.png" alt="team-logo">
               </div>
               <h3 class="text-main-red">0:5</h3> 
-              <div class="flex space-x-3 mt-2">
-                <a class="uppercase flex items-center text-sm text-main-blue font-bold rouned border-2 border-main-blue p-1 rounded" href="#">Reportáž <img class="ml-2" src="../images/right-arrow.svg" alt="arrow"></a>
-                <a class="uppercase flex items-center text-sm text-main-blue font-bold rouned border-2 border-main-blue p-1 rounded" href="#">Fotogalerie <img class="ml-2" src="../images/right-arrow.svg" alt="arrow"></a>
+              <div class="flex space-x-3 mt-2 2xl:mt-6">
+                <a class="group uppercase flex items-center text-sm text-main-blue font-bold border-2 border-main-blue p-1 rounded 2xl:px-6 2xl:py-2" href="#">Reportáž <img class="ml-2 transition-transform group-hover:translate-x-3" src="../images/right-arrow.svg" alt="arrow"></a>
+                <a class="group uppercase flex items-center text-sm text-main-blue font-bold border-2 border-main-blue p-1 rounded 2xl:px-6 2xl:py-2" href="#">Fotogalerie <img class="ml-2 transition-transform group-hover:translate-x-3" src="../images/right-arrow.svg" alt="arrow"></a>
               </div>
             </div>
           </div>
           <div>
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center lg:border-r-2 lg:border-gray-200">
               <span class="text-sm text-main-blue">2. liga – Sever | 2.10.2021 18:00 | 5. kolo</span>
               <div class="w-full md:w-3/4 md:mx-auto flex items-center justify-between mt-2">
                 <img class="w-20 h-20 object-contain" src="../images/logo.png" alt="team-logo">
@@ -102,182 +117,202 @@
                 <img class="w-20 h-20 object-contain" src="../images/HRO.png" alt="team-logo">
               </div>
               <h3 class="text-main-blue">so 9.10., 18:00</h3> 
-              <div class="flex space-x-3 mt-2">
-                <a class="uppercase flex items-center text-sm text-main-blue font-bold rouned border-2 border-main-blue p-1 rounded" href="#">Online-Přenos <img class="ml-2" src="../images/right-arrow.svg" alt="arrow"></a>
+              <div class="flex space-x-3 mt-2 2xl:mt-6">
+                <a class="group uppercase flex items-center text-sm text-main-blue font-bold border-2 border-main-blue p-1 rounded 2xl:px-6 2xl:py-2" href="#">Online-Přenos <img class="ml-2 transition-transform group-hover:translate-x-3" src="../images/right-arrow.svg" alt="arrow"></a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col items-center lg:border-r-2 lg:border-gray-200">
+              <span class="text-sm text-main-blue">2. liga – Sever | 2.10.2021 18:00 | 5. kolo</span>
+              <div class="w-full md:w-3/4 md:mx-auto flex items-center justify-between mt-2">
+                <img class="w-20 h-20 object-contain" src="../images/logo.png" alt="team-logo">
+                <div class="text-center">
+                  <h6 class="uppercase leading-5">hc děčín</h6>
+                  <h6 class="uppercase leading-5">HC VLCI JABLONEC NAD NISOU</h6>
+                </div>
+                <img class="w-20 h-20 object-contain" src="../images/JAB.png" alt="team-logo">
+              </div>
+              <h3 class="text-main-red">0:5</h3> 
+              <div class="flex space-x-3 mt-2 2xl:mt-6">
+                <a class="group uppercase flex items-center text-sm text-main-blue font-bold border-2 border-main-blue p-1 rounded 2xl:px-6 2xl:py-2" href="#">Reportáž <img class="ml-2 transition-transform group-hover:translate-x-3" src="../images/right-arrow.svg" alt="arrow"></a>
+                <a class="group uppercase flex items-center text-sm text-main-blue font-bold border-2 border-main-blue p-1 rounded 2xl:px-6 2xl:py-2" href="#">Fotogalerie <img class="ml-2 transition-transform group-hover:translate-x-3" src="../images/right-arrow.svg" alt="arrow"></a>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="bg-gray-100">
-        <div class="px-3 py-8 flex flex-col space-y-8">
-          <div class="flex flex-col space-y-3">
-            <div class="w-full h-20 bg-white shadow grid place-items-center">banner</div>
-            <div class="w-full h-20 bg-white shadow grid place-items-center">banner</div>
+        <div class="px-3 py-8 2xl:py-10 flex flex-col space-y-8 2xl:space-y-10 xl:w-5/6 xl:mx-auto 3xl:w-3/4">
+          <div class="flex flex-col space-y-3 md:w-3/4 lg:space-y-0 lg:flex-row lg:space-x-6 lg:w-full">
+            <div class="w-full h-20 2xl:h-32 bg-white shadow grid place-items-center">banner</div>
+            <div class="w-full h-20 2xl:h-32 bg-white shadow grid place-items-center">banner</div>
           </div>
-          <div>
-            <div class="flex flex-col space-y-3 mb-4">
-              <div class="shadow-md">
-                <img class="object-cover w-full h-44" src="../images/clanek1.jpg" alt="">
-                <div class="p-4 pt-5 bg-white">
-                  <span class="p-2 text-sm rounded font-bold bg-main-red text-white">18.9.2021</span>
-                  <div class="h7 uppercase mt-2"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+          <div class="flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:space-x-6">
+            <div class="lg:w-1/2 lg:flex lg:flex-col lg:justify-between">
+              <div class="flex flex-col space-y-3 mb-4 md:flex-row md:space-y-0 md:space-x-6 2xl:mb-6">
+                <div class="shadow-md lg:h-88">
+                  <img class="object-cover w-full h-44 lg:h-52" src="../images/clanek1.jpg" alt="">
+                  <div class="p-4 pt-5 bg-white lg:h-36">
+                    <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                    <div class="h7 uppercase mt-2 2xl:mt-3"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                  </div>
+                </div>
+                <div class="shadow-md lg:h-88">
+                  <img class="object-cover w-full h-44 lg:h-52" src="../images/clanek2.jpg" alt="">
+                  <div class="p-4 pt-5 bg-white lg:h-36">
+                    <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                    <div class="h7 uppercase mt-2 2xl:mt-3"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                  </div>
                 </div>
               </div>
-              <div class="shadow-md">
-                <img class="object-cover w-full h-44" src="../images/clanek2.jpg" alt="">
-                <div class="p-4 pt-5 bg-white">
-                  <span class="p-2 text-sm rounded font-bold bg-main-red text-white">18.9.2021</span>
-                  <div class="h7 uppercase mt-2"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
-                </div>
-              </div>
+              <a class="group uppercase w-max flex items-center text-sm text-main-blue font-bold border-2 border-main-blue p-1 rounded lg:self-end 2xl:py-2 2xl:px-6" href="#">Další články <img class="ml-2 transition-transform group-hover:translate-x-3" src="../images/right-arrow.svg" alt="arrow"></a>
             </div>
-            <a class="uppercase w-max flex items-center text-sm text-main-blue font-bold rouned border-2 border-main-blue p-1 rounded" href="#">Další články <img class="ml-2" src="../images/right-arrow.svg" alt="arrow"></a>
-          </div>
-          <div>
-            <a href="#">
-              <div class="foto_nahled relative flex items-end h-64 mb-4">
-                <div class="absolute top-3 left-3 z-20 flex items-center space-x-2">
-                  <img class="w-6 h-6" src="../images/gallery.png" alt="gallery-icon">
-                  <h6 class="text-white">48</h6>
+            <div class="lg:w-1/2 lg:flex lg:flex-col lg:justify-between">
+              <a href="#">
+                <div class="foto_nahled relative flex items-end h-64 mb-4 md:w-3/4 lg:w-full lg:h-88 2xl:mb-6">
+                  <div class="absolute top-3 left-3 2xl:top-9 2xl:left-9 z-20 flex items-center space-x-2">
+                    <img class="w-6 h-6" src="../images/gallery.png" alt="gallery-icon">
+                    <h6 class="text-white">48</h6>
+                  </div>
+                  <img class="absolute inset-0 w-full h-full object-cover" src="../images/clanek1.jpg" alt="fotogalerie-nahled">
+                  <div class="relative z-20 p-3 2xl:p-9">
+                    <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                    <h6 class="mt-2 text-white uppercase">Nejnovější galerie: HC Děčín – Jablonec 0:5</h6>
+                  </div>
                 </div>
-                <img class="absolute inset-0 w-full h-full object-cover" src="../images/clanek1.jpg" alt="fotogalerie-nahled">
-                <div class="relative z-20 p-3">
-                  <span class="p-2 text-sm rounded font-bold bg-main-red text-white">18.9.2021</span>
-                  <h6 class="mt-2 text-white">Nejnovější galerie: HC Děčín – Jablonec 0:5</h6>
-                </div>
-              </div>
-            </a>
-            <a class="uppercase w-max flex items-center text-sm text-main-blue font-bold rouned border-2 border-main-blue p-1 rounded" href="#">Další galerie <img class="ml-2" src="../images/right-arrow.svg" alt="arrow"></a>
+              </a>
+              <a class="group uppercase w-max flex items-center text-sm text-main-blue font-bold border-2 border-main-blue p-1 rounded lg:self-end 2xl:py-2 2xl:px-6" href="#">Další galerie <img class="ml-2 transition-transform group-hover:translate-x-3" src="../images/right-arrow.svg" alt="arrow"></a>
+            </div>
           </div>
         </div>
       </section>
       <section class="youth relative bg-white drop-shadow-md">
-        <div class="px-3 py-8 flex flex-col space-y-8">
-          <div>
-            <h4 class="uppercase text-main-blue mb-4 relative z-20">Mládež & ženy</h4>
-              <div class="flex flex-col space-y-3 mb-4 pt-4">
+        <div class="px-3 py-8 2xl:py-10 2xl:pb-0 flex flex-col space-y-8 xl:w-5/6 xl:mx-auto 2xl:flex-row 2xl:space-y-0 2xl:space-x-6 3xl:w-3/4">
+          <div class="lg:flex lg:flex-col lg:justify-between 2xl:w-3/4 2xl:pb-4">
+            <h4 class="uppercase text-main-blue mb-4 2xl:mb-6 relative z-20">Mládež & ženy</h4>
+              <div class="flex flex-col space-y-3 mb-4 pt-4 2xl:pt-6 md:flex-row md:space-y-0 md:space-x-6">
                 <div class="shadow-md">
-                  <img class="object-cover w-full h-44" src="../images/clanek1.jpg" alt="">
+                  <img class="object-cover w-full h-44 2xl:h-60" src="../images/clanek1.jpg" alt="">
                   <div class="p-4 pt-5 bg-main-blue">
-                    <span class="p-2 text-sm rounded font-bold bg-main-red text-white">18.9.2021</span>
+                    <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
                     <div class="h7 uppercase mt-2 text-white"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
                   </div>
                 </div>
                 <div class="shadow-md">
-                  <img class="object-cover w-full h-44" src="../images/clanek2.jpg" alt="">
+                  <img class="object-cover w-full h-44 2xl:h-60" src="../images/clanek2.jpg" alt="">
                   <div class="p-4 pt-5 bg-main-blue">
-                    <span class="p-2 text-sm rounded font-bold bg-main-red text-white">18.9.2021</span>
+                    <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
                     <div class="h7 uppercase mt-2 text-white"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
                   </div>
                 </div>
                 <div class="shadow-md">
-                  <img class="object-cover w-full h-44" src="../images/clanek2.jpg" alt="">
+                  <img class="object-cover w-full h-44 2xl:h-60" src="../images/clanek2.jpg" alt="">
                   <div class="p-4 pt-5 bg-main-blue">
-                    <span class="p-2 text-sm rounded font-bold bg-main-red text-white">18.9.2021</span>
+                    <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
                     <div class="h7 uppercase mt-2 text-white"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
                   </div>
                 </div>
               </div>
-              <a class="uppercase w-max flex items-center text-sm text-main-blue font-bold rouned border-2 border-main-blue p-1 rounded" href="#">Další články <img class="ml-2" src="../images/right-arrow.svg" alt="arrow"></a>
+              <a class="group uppercase w-max flex items-center text-sm text-main-blue font-bold border-2 border-main-blue p-1 rounded 2xl:py-2 2xl:px-6 2xl:self-end" href="#">Další články <img class="ml-2 transition-transform group-hover:translate-x-3" src="../images/right-arrow.svg" alt="arrow"></a>
           </div>
-          <div class="text-white">
-            <h4 class="uppercase bg-main-red p-4">Naše týmy</h4>
-            <div class="">
+          <div class="text-white md:w-96 xl:z-20 2xl:w-1/4">
+            <h6 class="uppercase bg-main-red p-4 2xl:py-3.5">Naše týmy</h6>
+            <div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
                 <div class="h7 uppercase">ženy</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
                 <div class="h7 uppercase">junioři</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
                 <div class="h7 uppercase">dorost</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
-                <div class="h7 uppercase">strší žáci a</div>
+                <div class="h7 uppercase">starší žáci a</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
-                <div class="h7 uppercase">strší žáci b</div>
+                <div class="h7 uppercase">starší žáci b</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
                 <div class="h7 uppercase">mladší žáci c</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
                 <div class="h7 uppercase">mladší žáci d</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
                 <div class="h7 uppercase">5. třída</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
                 <div class="h7 uppercase">4. třída</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
                 <div class="h7 uppercase">3. třída</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
                 <div class="h7 uppercase">2. třída</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
               <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
                 <div class="h7 uppercase">1. třída</div>
                 <div class="flex space-x-2 text-sm">
-                  <a href="#">Soupiska</a>
-                  <span class="text-main-red">/</span>
-                  <a href="#">Zápasy</a>
+                  <a class="hover:underline" href="#">Soupiska</a>
+                  <span class="text-main-red font-bold">/</span>
+                  <a class="hover:underline" href="#">Zápasy</a>
                 </div>
               </div>
             </div>
@@ -285,32 +320,32 @@
         </div>
       </section>
       <section class="bg-gray-100">
-        <div class="px-3 pt-8 pb-16 flex flex-col space-y-6">
-          <div class="shadow grid place-items-center h-20">
+        <div class="px-3 pt-8 2xl:pt-10 pb-16 2xl:pb-18 flex flex-col space-y-6 md:flex-row md:flex-wrap md:space-y-0 md:gap-6 2xl:gap-8 xl:w-5/6 xl:mx-auto 3xl:w-3/4">
+          <div class="shadow grid place-items-center h-20 md:w-64 md:h-24 2xl:w-80 2xl:h-32">
             partner
           </div>
-          <div class="shadow grid place-items-center h-20">
+          <div class="shadow grid place-items-center h-20 md:w-64 md:h-24 2xl:w-80 2xl:h-32">
             partner
           </div>
-          <div class="shadow grid place-items-center h-20">
+          <div class="shadow grid place-items-center h-20 md:w-64 md:h-24 2xl:w-80 2xl:h-32">
             partner
           </div>
-          <div class="shadow grid place-items-center h-20">
+          <div class="shadow grid place-items-center h-20 md:w-64 md:h-24 2xl:w-80 2xl:h-32">
             partner
           </div>
-          <div class="shadow grid place-items-center h-20">
+          <div class="shadow grid place-items-center h-20 md:w-64 md:h-24 2xl:w-80 2xl:h-32">
             partner
           </div>
-          <div class="shadow grid place-items-center h-20">
+          <div class="shadow grid place-items-center h-20 md:w-64 md:h-24 2xl:w-80 2xl:h-32">
             partner
           </div>
-          <div class="shadow grid place-items-center h-20">
+          <div class="shadow grid place-items-center h-20 md:w-64 md:h-24 2xl:w-80 2xl:h-32">
             partner
           </div>
         </div>
       </section>
     </main>
-    <footer class="relative bg-main-blue border-t-2 border-main-red">
+    <footer class="relative bg-main-blue border-t-2 2xl:border-t-4 border-main-red">
       <a href="index.html">
         <img class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 object-contain transition-transform hover:scale-105" src="../images/logo_footer.png" alt="logo-footer">
       </a>

@@ -7,13 +7,13 @@
         @apply font-body;
     }
     h3 {
-        @apply font-bold text-4xl;
+        @apply font-bold text-4xl 2xl:text-h3;
     }
     h4 {
-        @apply font-bold text-2xl;
+        @apply font-bold text-2xl 2xl:text-h4 2xl:leading-10;
     }
     h6 {
-        @apply font-bold text-lg;
+        @apply font-bold text-lg 2xl:text-xl;
     }
     .h7 {
         @apply font-bold text-base;
@@ -29,10 +29,49 @@
         transform: translateX(0);
     }
     .nav_link {
-        @apply uppercase text-white font-bold text-lg;
+        @apply uppercase text-white font-bold text-lg lg:pb-1 relative 2xl:text-xl;
+    }
+    .nav_link::after {
+        content: "";
+        @apply absolute right-0 bottom-0 w-0 h-0.5 bg-white;
+        transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .nav_link:hover::after {
+        @apply right-auto w-full left-0;
+    }
+    .nav_link:not(:first-child)::before {
+        content: "/";
+        @apply hidden xl:block absolute -left-4 2xl:-left-6 top-1/2 -translate-y-1/2 text-main-red;
     }
     .burger {
-        @apply cursor-pointer z-50;
+        @apply cursor-pointer z-50 px-3 lg:hidden;
+    }
+    .search_input {
+        @apply rounded w-0 outline-none bg-white text-main-blue transition-all duration-200;
+    }
+    .search_input.active {
+        @apply w-48 px-2 mr-1;
+    }
+    .article:nth-child(1) {
+        @apply lg:h-full lg:row-span-2;
+    }
+    .article .top_article_span {
+        @apply 2xl:px-4;
+    }
+    .article:nth-child(1) .top_article_span {
+        @apply 2xl:px-6;    
+    }
+    .dropdown_menu {
+        @apply hidden lg:absolute lg:hidden lg:group-hover:flex lg:bg-white lg:text-main-blue lg:p-3 lg:w-max lg:flex-col lg:space-y-3 z-20;
+    }
+    .dropdown_menu.active {
+        @apply flex flex-col space-y-1;
+    }
+    .dropdown_menu li:last-child a {
+        @apply lg:border-b-0;
+    }
+    .dropdown_menu li a {
+        @apply border-b border-main-red pb-1 lg:py-2 w-full text-sm transition-colors lg:hover:text-main-red;
     }
 }
 
@@ -47,6 +86,6 @@
     }
     .youth::before {
         content: "";
-        @apply absolute inset-0 h-20 w-full bg-gray-100 z-10;
+        @apply absolute inset-0 h-20 2xl:h-24 w-full bg-gray-100 z-10;
     }
 }

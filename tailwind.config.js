@@ -14,17 +14,27 @@ module.exports = {
       fontSize: {
         "h1": "3.5rem",
         "h3": "2.5rem",
+        "h4": "2rem",
       },
       fontFamily: {
         "body": ['"Barlow"', "sans-serif"],
       },
       height: {
         "22": "5.5rem",
+        "88": "22rem",
+      },
+      gridTemplateColumns: {
+        "top-articles": "1.3fr 0.7fr",
+      },
+      screens: {
+        "3xl": "1920px",
       }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      border: ['last'],
+    },
   },
   plugins: [],
 }

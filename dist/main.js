@@ -28,6 +28,17 @@ if (window.innerWidth < 1024) {
 }
 // MENU - END
 
+// SEARCH INPUT - START
+const searchBtn = document.querySelector(".search_btn");
+const searchInput = document.querySelector(".search_input");
+
+if (searchBtn) {
+  searchBtn.addEventListener("click", () => {
+    searchInput.classList.toggle("active");
+  });
+}
+// SEARCH INPUT - END
+
 // SLICK - START
 $('.matches').slick({
     dots: false,
@@ -35,19 +46,19 @@ $('.matches').slick({
     infinite: false,
     draggable: true,
     speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     responsive: [
         {
             breakpoint: 768,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
             }
         },
         {
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
             }
         }
     ]
