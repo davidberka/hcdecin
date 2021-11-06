@@ -6,8 +6,17 @@
     body {
         @apply font-body;
     }
+    h3 {
+        @apply font-bold text-4xl;
+    }
     h4 {
         @apply font-bold text-2xl;
+    }
+    h6 {
+        @apply font-bold text-lg;
+    }
+    .h7 {
+        @apply font-bold text-base;
     }
 }
 
@@ -15,5 +24,9 @@
     .article::before {
         content: "";
         @apply absolute inset-0 h-full w-full z-10 bg-gradient-to-t from-main-blue to-transparent;
+    }
+    .foto_nahled::before {
+        content: "";
+        @apply absolute inset-0 h-full w-full z-10 bg-gradient-to-r from-main-blue to-transparent;
     }
 }

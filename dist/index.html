@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" type="text/css">
     <link rel="stylesheet" href="../src/styles.css" />
   </head>
   <body>
@@ -69,26 +70,93 @@
           </div>
         </div>
       </section> 
-      <section>
-        <div>
+      <section class="bg-white shadow-xl">
+        <div class="matches px-3 py-8">
           <div>
-            <span>2. liga – Sever | 2.10.2021 18:00 | 5. kolo</span>
-            <div>
-              <img src="" alt="">
-              <div>
-                <h6 class="uppercase">hc děčín</h6>
-                <h6 class="uppercase">HC VLCI JABLONEC NAD NISOU</h6>
+            <div class="flex flex-col items-center">
+              <span class="text-sm text-main-blue">2. liga – Sever | 2.10.2021 18:00 | 5. kolo</span>
+              <div class="w-full flex items-center justify-between mt-2">
+                <img class="w-20 h-20 object-contain" src="../images/logo.png" alt="team-logo">
+                <div class="text-center">
+                  <h6 class="uppercase leading-5">hc děčín</h6>
+                  <h6 class="uppercase leading-5">HC VLCI JABLONEC NAD NISOU</h6>
+                </div>
+                <img class="w-20 h-20 object-contain" src="../images/JAB.png" alt="team-logo">
               </div>
-              <img src="" alt="">
+              <h3 class="text-main-red">0:5</h3> 
+              <div class="flex space-x-3 mt-2">
+                <a class="uppercase flex items-center text-sm text-main-blue font-bold rouned border-2 border-main-blue p-1 rounded" href="#">Reportáž <img class="ml-2" src="../images/right-arrow.svg" alt="arrow"></a>
+                <a class="uppercase flex items-center text-sm text-main-blue font-bold rouned border-2 border-main-blue p-1 rounded" href="#">Fotogalerie <img class="ml-2" src="../images/right-arrow.svg" alt="arrow"></a>
+              </div>
             </div>
-            <h3>0:5</h3> 
-            <div>
-              <a class="uppercase" href="#">Reportáž <img src="" alt=""></a>
-              <a class="uppercase" href="#">Fotogalerie <img src="" alt=""></a>
+          </div>
+          <div>
+            <div class="flex flex-col items-center">
+              <span class="text-sm text-main-blue">2. liga – Sever | 2.10.2021 18:00 | 5. kolo</span>
+              <div class="w-full flex items-center justify-between mt-2">
+                <img class="w-20 h-20 object-contain" src="../images/logo.png" alt="team-logo">
+                <div class="text-center">
+                  <h6 class="uppercase leading-5">hc děčín</h6>
+                  <h6 class="uppercase leading-5">hc hronov</h6>
+                </div>
+                <img class="w-20 h-20 object-contain" src="../images/HRO.png" alt="team-logo">
+              </div>
+              <h3 class="text-main-blue">so 9.10., 18:00</h3> 
+              <div class="flex space-x-3 mt-2">
+                <a class="uppercase flex items-center text-sm text-main-blue font-bold rouned border-2 border-main-blue p-1 rounded" href="#">Online-Přenos <img class="ml-2" src="../images/right-arrow.svg" alt="arrow"></a>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="bg-gray-100">
+        <div class="px-3 py-8 flex flex-col space-y-8">
+          <div class="flex flex-col space-y-3">
+            <div class="w-full h-20 bg-white shadow grid place-items-center">banner</div>
+            <div class="w-full h-20 bg-white shadow grid place-items-center">banner</div>
+          </div>
+          <div>
+            <div class="flex flex-col space-y-3 mb-4">
+              <div class="shadow-md">
+                <img class="object-cover w-full h-44" src="../images/clanek1.jpg" alt="">
+                <div class="p-4 pt-5 bg-white">
+                  <span class="p-2 text-sm rounded font-bold bg-main-red text-white">18.9.2021</span>
+                  <div class="h7 uppercase mt-2"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                </div>
+              </div>
+              <div class="shadow-md">
+                <img class="object-cover w-full h-44" src="../images/clanek2.jpg" alt="">
+                <div class="p-4 pt-5 bg-white">
+                  <span class="p-2 text-sm rounded font-bold bg-main-red text-white">18.9.2021</span>
+                  <div class="h7 uppercase mt-2"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                </div>
+              </div>
+            </div>
+            <a class="uppercase w-max flex items-center text-sm text-main-blue font-bold rouned border-2 border-main-blue p-1 rounded" href="#">Další články <img class="ml-2" src="../images/right-arrow.svg" alt="arrow"></a>
+          </div>
+          <div>
+            <a href="#">
+              <div class="foto_nahled relative flex items-end h-64 mb-4">
+                <div class="absolute top-3 left-3 z-20 flex items-center space-x-2">
+                  <img class="w-6 h-6" src="../images/gallery.png" alt="gallery-icon">
+                  <h6 class="text-white">48</h6>
+                </div>
+                <img class="absolute inset-0 w-full h-full object-cover" src="../images/clanek1.jpg" alt="fotogalerie-nahled">
+                <div class="relative z-20 p-3">
+                  <span class="p-2 text-sm rounded font-bold bg-main-red text-white">18.9.2021</span>
+                  <h6 class="mt-2 text-white">Nejnovější galerie: HC Děčín – Jablonec 0:5</h6>
+                </div>
+              </div>
+            </a>
+            <a class="uppercase w-max flex items-center text-sm text-main-blue font-bold rouned border-2 border-main-blue p-1 rounded" href="#">Další galerie <img class="ml-2" src="../images/right-arrow.svg" alt="arrow"></a>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white"></section>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" type="text/javascript"></script>
+    <script src="main.js"></script>
   </body>
 </html>
