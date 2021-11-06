@@ -29,4 +29,8 @@
         content: "";
         @apply absolute inset-0 h-full w-full z-10 bg-gradient-to-r from-main-blue to-transparent;
     }
+    .youth::before {
+        content: "";
+        @apply absolute inset-0 h-20 w-full bg-gray-100 z-10;
+    }
 }
