@@ -20,6 +20,22 @@
     }
 }
 
+@layer components {
+    .navigation {
+        transform: translateY(-100%);
+        @apply fixed top-0 right-0 z-40 pt-20 py-9 transition-transform duration-300 bg-main-blue flex justify-center items-center w-full md:w-80 flex-col space-y-16  lg:translate-x-0 lg:bg-transparent lg:h-1/2 lg:space-y-0 lg:flex-row lg:static lg:w-max lg:py-3 border-b-2 border-main-red lg:border-none;
+    }
+    .navigation.menu_active {
+        transform: translateX(0);
+    }
+    .nav_link {
+        @apply uppercase text-white font-bold text-lg;
+    }
+    .burger {
+        @apply cursor-pointer z-50;
+    }
+}
+
 @layer utilities {
     .article::before {
         content: "";

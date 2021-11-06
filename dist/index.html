@@ -14,17 +14,17 @@
   <body>
     <header class="bg-main-blue border-b-2 border-main-red h-20">
       <div class="h-full flex items-center justify-between px-3">
-        <div class="h-24 flex items-center justify-center shadow-sm bg-white p-3">
+        <a href="index.html" class="h-24 flex items-center justify-center transition-shadow shadow-sm hover:shadow-lg bg-white p-3">
           <img class="h-5/6 w-auto object-contain" src="../images/logo.png" alt="logo">
-        </div>
-        <nav class="hidden">
-          <ul>
-            <li>INFORMACE</li>
-            <li>A-MUŽSTVO</li>
-            <li>MLÁDEŽ</li>
-            <li>NÁBOR</li>
-            <li>ARCHIV</li>
-            <li>KONTAKT</li>
+        </a>
+        <nav class="navigation">
+          <ul class="flex flex-col space-y-4">
+            <li class="nav_link"><a href="#">INFORMACE</a></li>
+            <li class="nav_link"><a href="#">A-MUŽSTVO</a></li>
+            <li class="nav_link"><a href="#">MLÁDEŽ</a></li>
+            <li class="nav_link"><a href="#">NÁBOR</a></li>
+            <li class="nav_link"><a href="#">ARCHIV</a></li>
+            <li class="nav_link"><a href="#">KONTAKT</a></li>
           </ul>
         </nav>
         <div class="hidden">
@@ -46,7 +46,7 @@
     </header>
     <main>
       <section class="bg-gray-100 text-white">
-        <div class="px-3 py-8 flex flex-col space-y-3">
+        <div class="px-3 py-8 flex flex-col space-y-3 md:space-y-0 md:grid md:grid-cols-2 md:gap-4">
           <div class="article relative flex items-end h-64">
             <img class="absolute h-full w-full inset-0 object-cover" src="../images/clanek1.jpg" alt="clanek-bg">
             <div class="z-20 relative p-3">
@@ -70,12 +70,12 @@
           </div>
         </div>
       </section> 
-      <section class="bg-white shadow-xl">
+      <section class="bg-white drop-shadow-md">
         <div class="matches px-3 py-8">
           <div>
             <div class="flex flex-col items-center">
               <span class="text-sm text-main-blue">2. liga – Sever | 2.10.2021 18:00 | 5. kolo</span>
-              <div class="w-full flex items-center justify-between mt-2">
+              <div class="w-full md:w-3/4 md:mx-auto flex items-center justify-between mt-2">
                 <img class="w-20 h-20 object-contain" src="../images/logo.png" alt="team-logo">
                 <div class="text-center">
                   <h6 class="uppercase leading-5">hc děčín</h6>
@@ -93,7 +93,7 @@
           <div>
             <div class="flex flex-col items-center">
               <span class="text-sm text-main-blue">2. liga – Sever | 2.10.2021 18:00 | 5. kolo</span>
-              <div class="w-full flex items-center justify-between mt-2">
+              <div class="w-full md:w-3/4 md:mx-auto flex items-center justify-between mt-2">
                 <img class="w-20 h-20 object-contain" src="../images/logo.png" alt="team-logo">
                 <div class="text-center">
                   <h6 class="uppercase leading-5">hc děčín</h6>
@@ -152,7 +152,7 @@
           </div>
         </div>
       </section>
-      <section class="youth relative bg-white">
+      <section class="youth relative bg-white drop-shadow-md">
         <div class="px-3 py-8 flex flex-col space-y-8">
           <div>
             <h4 class="uppercase text-main-blue mb-4 relative z-20">Mládež & ženy</h4>
@@ -183,10 +183,98 @@
           </div>
           <div class="text-white">
             <h4 class="uppercase bg-main-red p-4">Naše týmy</h4>
-            <div class="even:bg-main-blue">
-              <div class="flex justify-between items-center py-2 px-4">
+            <div class="">
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
                 <div class="h7 uppercase">ženy</div>
-                <div class="flex space-x-2">
+                <div class="flex space-x-2 text-sm">
+                  <a href="#">Soupiska</a>
+                  <span class="text-main-red">/</span>
+                  <a href="#">Zápasy</a>
+                </div>
+              </div>
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
+                <div class="h7 uppercase">junioři</div>
+                <div class="flex space-x-2 text-sm">
+                  <a href="#">Soupiska</a>
+                  <span class="text-main-red">/</span>
+                  <a href="#">Zápasy</a>
+                </div>
+              </div>
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
+                <div class="h7 uppercase">dorost</div>
+                <div class="flex space-x-2 text-sm">
+                  <a href="#">Soupiska</a>
+                  <span class="text-main-red">/</span>
+                  <a href="#">Zápasy</a>
+                </div>
+              </div>
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
+                <div class="h7 uppercase">strší žáci a</div>
+                <div class="flex space-x-2 text-sm">
+                  <a href="#">Soupiska</a>
+                  <span class="text-main-red">/</span>
+                  <a href="#">Zápasy</a>
+                </div>
+              </div>
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
+                <div class="h7 uppercase">strší žáci b</div>
+                <div class="flex space-x-2 text-sm">
+                  <a href="#">Soupiska</a>
+                  <span class="text-main-red">/</span>
+                  <a href="#">Zápasy</a>
+                </div>
+              </div>
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
+                <div class="h7 uppercase">mladší žáci c</div>
+                <div class="flex space-x-2 text-sm">
+                  <a href="#">Soupiska</a>
+                  <span class="text-main-red">/</span>
+                  <a href="#">Zápasy</a>
+                </div>
+              </div>
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
+                <div class="h7 uppercase">mladší žáci d</div>
+                <div class="flex space-x-2 text-sm">
+                  <a href="#">Soupiska</a>
+                  <span class="text-main-red">/</span>
+                  <a href="#">Zápasy</a>
+                </div>
+              </div>
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
+                <div class="h7 uppercase">5. třída</div>
+                <div class="flex space-x-2 text-sm">
+                  <a href="#">Soupiska</a>
+                  <span class="text-main-red">/</span>
+                  <a href="#">Zápasy</a>
+                </div>
+              </div>
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
+                <div class="h7 uppercase">4. třída</div>
+                <div class="flex space-x-2 text-sm">
+                  <a href="#">Soupiska</a>
+                  <span class="text-main-red">/</span>
+                  <a href="#">Zápasy</a>
+                </div>
+              </div>
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
+                <div class="h7 uppercase">3. třída</div>
+                <div class="flex space-x-2 text-sm">
+                  <a href="#">Soupiska</a>
+                  <span class="text-main-red">/</span>
+                  <a href="#">Zápasy</a>
+                </div>
+              </div>
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
+                <div class="h7 uppercase">2. třída</div>
+                <div class="flex space-x-2 text-sm">
+                  <a href="#">Soupiska</a>
+                  <span class="text-main-red">/</span>
+                  <a href="#">Zápasy</a>
+                </div>
+              </div>
+              <div class="even:bg-main-blue odd:bg-dark-blue flex justify-between items-center py-2 px-4">
+                <div class="h7 uppercase">1. třída</div>
+                <div class="flex space-x-2 text-sm">
                   <a href="#">Soupiska</a>
                   <span class="text-main-red">/</span>
                   <a href="#">Zápasy</a>
@@ -196,7 +284,40 @@
           </div>
         </div>
       </section>
+      <section class="bg-gray-100">
+        <div class="px-3 pt-8 pb-16 flex flex-col space-y-6">
+          <div class="shadow grid place-items-center h-20">
+            partner
+          </div>
+          <div class="shadow grid place-items-center h-20">
+            partner
+          </div>
+          <div class="shadow grid place-items-center h-20">
+            partner
+          </div>
+          <div class="shadow grid place-items-center h-20">
+            partner
+          </div>
+          <div class="shadow grid place-items-center h-20">
+            partner
+          </div>
+          <div class="shadow grid place-items-center h-20">
+            partner
+          </div>
+          <div class="shadow grid place-items-center h-20">
+            partner
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="relative bg-main-blue border-t-2 border-main-red">
+      <a href="index.html">
+        <img class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 object-contain transition-transform hover:scale-105" src="../images/logo_footer.png" alt="logo-footer">
+      </a>
+      <div class="px-3 pt-14 pb-8 text-center">
+        <p class="text-base text-white">Copyright © 2021 HC Děčín & <a class="hover:underline" href="https://esportsmedia.cz/">eSports.cz, s.r.o.</a></p>
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" type="text/javascript"></script>
