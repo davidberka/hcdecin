@@ -33,7 +33,7 @@
     }
     .nav_link::after {
         content: "";
-        @apply absolute right-0 bottom-0 w-0 h-0.5 bg-white;
+        @apply hidden lg:block absolute right-0 bottom-0 w-0 h-0.5 bg-white;
         transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     }
     .nav_link:hover::after {
