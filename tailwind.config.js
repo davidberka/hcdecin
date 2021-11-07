@@ -29,6 +29,9 @@ module.exports = {
       },
       screens: {
         "3xl": "1920px",
+      },
+      minHeight: {
+        "500": "73.9vh",
       }
     },
   },
