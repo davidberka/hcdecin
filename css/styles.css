@@ -6,6 +6,9 @@
     body {
         @apply font-body;
     }
+    h3, h4, h6, .h7 {
+        @apply uppercase;
+    }
     h3 {
         @apply font-bold text-4xl 2xl:text-h3;
     }
