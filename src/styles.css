@@ -1185,6 +1185,10 @@ video {
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
+.py-4 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
 .pb-4 {
 	padding-bottom: 1rem;
 }
@@ -1205,6 +1209,9 @@ video {
 }
 .pb-16 {
 	padding-bottom: 4rem;
+}
+.pb-2 {
+	padding-bottom: 0.5rem;
 }
 .text-center {
 	text-align: center;
@@ -1567,16 +1574,9 @@ video {
 		left: 2.25rem;
 	}
 
-	.\32xl\:mt-3 {
-		margin-top: 0.75rem;
-	}
-
-	.\32xl\:mt-4 {
-		margin-top: 1rem;
-	}
-
-	.\32xl\:mt-6 {
-		margin-top: 1.5rem;
+	.\32xl\:mx-auto {
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.\32xl\:mb-6 {
@@ -1591,12 +1591,36 @@ video {
 		margin-bottom: 3rem;
 	}
 
+	.\32xl\:mt-3 {
+		margin-top: 0.75rem;
+	}
+
+	.\32xl\:mt-4 {
+		margin-top: 1rem;
+	}
+
+	.\32xl\:mt-6 {
+		margin-top: 1.5rem;
+	}
+
+	.\32xl\:mb-0 {
+		margin-bottom: 0px;
+	}
+
+	.\32xl\:mt-8 {
+		margin-top: 2rem;
+	}
+
 	.\32xl\:h-22 {
 		height: 5.5rem;
 	}
 
 	.\32xl\:h-28 {
 		height: 7rem;
+	}
+
+	.\32xl\:h-article-img {
+		height: 47.4rem;
 	}
 
 	.\32xl\:h-80 {
@@ -1611,8 +1635,8 @@ video {
 		height: 15rem;
 	}
 
-	.\32xl\:h-article-img {
-		height: 47.4rem;
+	.\32xl\:w-11\/12 {
+		width: 91.666667%;
 	}
 
 	.\32xl\:w-3\/4 {
@@ -1625,6 +1649,34 @@ video {
 
 	.\32xl\:w-80 {
 		width: 20rem;
+	}
+
+	.\32xl\:w-1\/2 {
+		width: 50%;
+	}
+
+	.\32xl\:w-7\/12 {
+		width: 58.333333%;
+	}
+
+	.\32xl\:translate-y-10 {
+		--tw-translate-y: 2.5rem;
+		transform: var(--tw-transform);
+	}
+
+	.\32xl\:-translate-y-10 {
+		--tw-translate-y: -2.5rem;
+		transform: var(--tw-transform);
+	}
+
+	.\32xl\:-translate-y-20 {
+		--tw-translate-y: -5rem;
+		transform: var(--tw-transform);
+	}
+
+	.\32xl\:-translate-y-28 {
+		--tw-translate-y: -7rem;
+		transform: var(--tw-transform);
 	}
 
 	.\32xl\:flex-row {
@@ -1675,6 +1727,10 @@ video {
 		padding: 2.25rem;
 	}
 
+	.\32xl\:p-6 {
+		padding: 1.5rem;
+	}
+
 	.\32xl\:py-3\.5 {
 		padding-top: 0.875rem;
 		padding-bottom: 0.875rem;
@@ -1705,6 +1761,19 @@ video {
 		padding-bottom: 2.5rem;
 	}
 
+	.\32xl\:py-6 {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	.\32xl\:pb-6 {
+		padding-bottom: 1.5rem;
+	}
+
+	.\32xl\:pt-6 {
+		padding-top: 1.5rem;
+	}
+
 	.\32xl\:pb-0 {
 		padding-bottom: 0px;
 	}
@@ -1713,16 +1782,12 @@ video {
 		padding-bottom: 1rem;
 	}
 
-	.\32xl\:pt-6 {
-		padding-top: 1.5rem;
-	}
-
 	.\32xl\:pt-10 {
 		padding-top: 2.5rem;
 	}
 
-	.\32xl\:pb-6 {
-		padding-bottom: 1.5rem;
+	.\32xl\:pt-4 {
+		padding-top: 1rem;
 	}
 }
 
