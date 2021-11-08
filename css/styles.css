@@ -44,7 +44,7 @@
     }
     .nav_link:not(:first-child)::before {
         content: "/";
-        @apply hidden xl:block absolute -left-4 2xl:-left-6 top-1/2 -translate-y-1/2 text-main-red;
+        @apply hidden xl:block absolute -left-4 2xl:-left-6 top-1/2 -translate-x-1/2 -translate-y-1/2 text-main-red;
     }
     .burger {
         @apply cursor-pointer z-50 px-3 lg:hidden;
@@ -90,5 +90,11 @@
     .youth::before {
         content: "";
         @apply absolute inset-0 h-20 2xl:h-24 w-full bg-gray-100 z-10;
+    }
+    .lost {
+        @apply text-main-red;
+    }
+    .win {
+        @apply text-green-600;
     }
 }
