@@ -68,7 +68,7 @@
         @apply 2xl:px-6;    
     }
     .dropdown_menu {
-        @apply hidden lg:absolute lg:-bottom-28 lg:flex lg:transition-all lg:translate-y-10 lg:group-hover:translate-y-5 lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:bg-white lg:text-main-blue lg:p-3 lg:w-max lg:flex-col lg:space-y-3 z-20;
+        @apply hidden lg:absolute lg:top-8 2xl:top-10 lg:flex lg:transition-all lg:translate-y-10 lg:group-hover:translate-y-5 lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:bg-white lg:text-main-blue lg:p-3 lg:w-max lg:flex-col lg:space-y-3 z-20;
     }
     .dropdown_menu.active {
         @apply flex flex-col space-y-1;
@@ -84,7 +84,7 @@
 @layer utilities {
     .article::before {
         content: "";
-        @apply absolute inset-0 h-full w-full z-10 bg-gradient-to-t from-main-blue to-transparent;
+        @apply absolute hover:hidden inset-0 h-full w-full z-10 bg-gradient-to-t from-main-blue to-transparent;
     }
     .foto_nahled::before {
         content: "";
@@ -108,5 +108,9 @@
     }
     .matchBox_paddingTop {
         @apply pt-4 2xl:pt-6;
+    }
+    .stretched_link::before {
+        content: "";
+        @apply absolute inset-0 z-40;
     }
 }
