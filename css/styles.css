@@ -97,4 +97,13 @@
     .win {
         @apply text-green-600;
     }
+    .matchBox_paddingBottom {
+        @apply pb-4 2xl:pb-6;
+    }
+    .matchBox_paddingY {
+        @apply py-4 2xl:py-6;
+    }
+    .matchBox_paddingTop {
+        @apply pt-4 2xl:pt-6;
+    }
 }
