@@ -641,6 +641,11 @@ video {
 	line-height: 1.5rem;
 	font-weight: 700;
 }
+    p {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	line-height: 1.75rem;
+}
 .navigation {
         transform: translateY(-100%);
         position: fixed;
@@ -737,6 +742,18 @@ video {
 @media (min-width: 1024px) {
 
 	.nav_link {
+		display: flex;
+	}
+
+	.nav_link {
+		height: 100%;
+	}
+
+	.nav_link {
+		align-items: center;
+	}
+
+	.nav_link {
 		padding-bottom: 0.25rem;
 	}
 }
@@ -751,7 +768,7 @@ video {
         content: "";
         position: absolute;
         right: 0px;
-        bottom: 0px;
+        bottom: 1rem;
         display: none;
         height: 0.125rem;
         width: 0px;
@@ -858,17 +875,30 @@ video {
 @media (min-width: 1024px) {
 
 	.dropdown_menu {
+		visibility: hidden;
+	}
+
+	.dropdown_menu {
 		position: absolute;
 	}
 
 	.dropdown_menu {
-		display: none;
+		bottom: -7rem;
+	}
+
+	.dropdown_menu {
+		display: flex;
 	}
 
 	.dropdown_menu {
 		width: -webkit-max-content;
 		width: -moz-max-content;
 		width: max-content;
+	}
+
+	.dropdown_menu {
+		--tw-translate-y: 2.5rem;
+		transform: var(--tw-transform);
 	}
 
 	.dropdown_menu {
@@ -895,8 +925,27 @@ video {
 		color: rgba(2, 56, 120, var(--tw-text-opacity));
 	}
 
+	.dropdown_menu {
+		opacity: 0;
+	}
+
+	.dropdown_menu {
+		transition-property: all;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 150ms;
+	}
+
 	.group:hover .dropdown_menu {
-		display: flex;
+		visibility: visible;
+	}
+
+	.group:hover .dropdown_menu {
+		--tw-translate-y: 1.25rem;
+		transform: var(--tw-transform);
+	}
+
+	.group:hover .dropdown_menu {
+		opacity: 1;
 	}
 }
 .dropdown_menu.active {
@@ -1414,42 +1463,34 @@ video {
 		padding-top: 1.5rem;
 	}
 }
-
 .odd\:bg-dark-blue:nth-child(odd) {
 	--tw-bg-opacity: 1;
 	background-color: rgba(0, 42, 90, var(--tw-bg-opacity));
 }
-
 .odd\:bg-gray-200:nth-child(odd) {
 	--tw-bg-opacity: 1;
 	background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
 }
-
 .even\:bg-main-blue:nth-child(even) {
 	--tw-bg-opacity: 1;
 	background-color: rgba(2, 56, 120, var(--tw-bg-opacity));
 }
-
 .hover\:scale-105:hover {
 	--tw-scale-x: 1.05;
 	--tw-scale-y: 1.05;
 	transform: var(--tw-transform);
 }
-
 .hover\:underline:hover {
 	text-decoration: underline;
 }
-
 .hover\:shadow-lg:hover {
 	--tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-
 .hover\:shadow-md:hover {
 	--tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-
 @media (min-width: 768px) {
 
 	.md\:mx-auto {
@@ -1565,7 +1606,6 @@ video {
 		margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 	}
 }
-
 @media (min-width: 1024px) {
 
 	.lg\:flex {
@@ -1668,7 +1708,6 @@ video {
 		transform: var(--tw-transform);
 	}
 }
-
 @media (min-width: 1280px) {
 
 	.xl\:z-20 {
@@ -1724,7 +1763,6 @@ video {
 		padding: 1.5rem;
 	}
 }
-
 @media (min-width: 1536px) {
 
 	.\32xl\:top-9 {
@@ -1968,15 +2006,10 @@ video {
 		padding-top: 2.5rem;
 	}
 
-	.\32xl\:pt-4 {
-		padding-top: 1rem;
-	}
-
 	.\32xl\:pb-24 {
 		padding-bottom: 6rem;
 	}
 }
-
 @media (min-width: 1920px) {
 
 	.\33xl\:w-3\/4 {
