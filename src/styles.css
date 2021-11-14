@@ -1416,6 +1416,9 @@ video {
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
+.underline {
+	text-decoration: underline;
+}
 .shadow-sm {
 	--tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1937,6 +1940,11 @@ video {
 		margin-right: auto;
 	}
 
+	.\32xl\:my-3 {
+		margin-top: 0.75rem;
+		margin-bottom: 0.75rem;
+	}
+
 	.\32xl\:mb-8 {
 		margin-bottom: 2rem;
 	}
@@ -2084,6 +2092,12 @@ video {
 		--tw-space-x-reverse: 0;
 		margin-right: calc(1.25rem * var(--tw-space-x-reverse));
 		margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+	}
+
+	.\32xl\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+		--tw-space-y-reverse: 0;
+		margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+		margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 	}
 
 	.\32xl\:self-end {
