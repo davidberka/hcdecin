@@ -39,8 +39,11 @@ if (searchBtn) {
 }
 // SEARCH INPUT - END
 
-// SLICK - START
-$('.matches').slick({
+// JQUERY - START
+$(document).ready(function () {
+  $('.js-select').select();
+
+  $('.matches').slick({
     dots: false,
     arrows: false,
     infinite: false,
@@ -49,18 +52,19 @@ $('.matches').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-            }
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
         }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
     ]
+  });
 });
-// SLICK - END
+// JQUERY - END

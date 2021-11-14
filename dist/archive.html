@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HC DĚČÍN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" type="text/css">
+    <link rel="stylesheet" href="../src/styles.css" />
+  </head>
+  <body>
+    <header class="bg-main-blue border-b-2 border-main-red h-20 2xl:h-22">
+      <div class="h-full flex items-center justify-between px-3 xl:w-5/6 xl:mx-auto 3xl:w-3/4">
+        <a href="index.html" class="h-24 flex items-center justify-center transition-shadow shadow-sm hover:shadow-lg bg-white p-3 2xl:h-28">
+          <img class="h-5/6 w-auto object-contain" src="../images/logo.png" alt="logo">
+        </a>
+        <nav class="navigation">
+          <ul class="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-3 xl:space-x-8 2xl:space-x-12">
+            <li class="nav_link"><a href="text.html">INFORMACE</a></li>
+            <li class="nav_link group">
+              <a href="#">A-MUŽSTVO</a>
+              <ul class="dropdown_menu">
+                  <li>
+                    <a href="roster.html">Soupiska</a>
+                  </li>
+                  <li>
+                    <a href="staff.html">Realizační tým</a>
+                  </li>
+                  <li>
+                    <a href="matches.html">Zápasy</a>
+                  </li>
+                </ul>
+            </li>
+            <li class="nav_link"><a href="#">MLÁDEŽ</a></li>
+            <li class="nav_link"><a href="#">NÁBOR</a></li>
+            <li class="nav_link"><a href="#">ARCHIV</a></li>
+            <li class="nav_link"><a href="#">KONTAKT</a></li>
+          </ul>
+        </nav>
+        <div class="hidden lg:flex lg:space-x-3 lg:items-center">
+          <div class="flex items-center">
+            <input class="search_input" type="text">
+            <button class="search_btn cursor-pointer">
+              <img class="w-5 h-5" loading="lazy" src="../images/search.png" alt="search-icon" />
+            </button>
+          </div>
+          <a class="flex items-center space-x-1" href="#" target="_blank">
+            <img class="w-5 h-5 transition-transform hover:scale-105" src="../images/fb.png" alt="social-icon">
+            <span class="text-main-red font-bold text-xs">FACEBOOK</span>
+          </a>
+        </div>
+        <div class="burger">
+          <div class="w-8 h-1 bg-white rounded"></div>
+          <div class="w-8 h-1 bg-white my-2 rounded"></div>
+          <div class="w-8 h-1 bg-white rounded"></div>
+        </div>
+      </div>
+    </header>
+    <main class="bg-gray-100">
+        <div class="px-3 pt-8 2xl:pt-10 pb-16 xl:w-5/6 3xl:w-3/4 mx-auto xl:flex xl:space-x-6">
+            <section class="md:w-3/4">
+               <div class="2xl:w-11/12 2xl:mx-auto 3xl:w-full">
+                   <div class="flex flex-wrap lg:items-center lg:justify-between mb-6 2xl:mb-8">
+                       <h3 class="text-main-blue w-max mb-4 lg:mb-0">Archiv članků</h3>
+                       <div class="flex flex-wrap gap-3">
+                          <select class="js-select form_select" name="month" id="month">
+                              <option value="1/2021">1/2021</option>
+                              <option value="2/2021">2/2021</option>
+                          </select>
+                          <select class="js-select form_select" name="category" id="category">
+                              <option value="men">Muzi</option>
+                              <option value="youth">Mladez</option>
+                          </select>
+                          <form>
+                              <input type="text" class="px-2 py-1 border border-main-blue focus:border-none focus:ring-2 ring-main-blue focus:outline-none rounded">
+                              <button type="submit" class="uppercase bg-main-blue text-white font-bold rounded px-2 py-1">Hledat</button>
+                          </form>
+                       </div>
+                   </div>
+                   <div class="flex flex-col space-y-3 lg:space-y-0 md:w-3/4 lg:w-full lg:grid lg:grid-cols-2 lg:gap-3 2xl:gap-6 3xl:grid-cols-3">
+                      <div class="relative overflow-hidden group hover:shadow-lg transition-shadow shadow-md lg:h-88">
+                        <img class="object-cover w-full h-44 lg:h-56" src="../images/clanek1.jpg" alt="">
+                        <div class="p-4 pt-5 bg-white lg:h-32">
+                          <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                          <div class="h7 mt-2 2xl:mt-3 group-hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                        </div>
+                        <a class="stretched_link" href="article.html"></a>
+                      </div>
+                      <div class="relative overflow-hidden group hover:shadow-lg transition-shadow shadow-md lg:h-88">
+                        <img class="object-cover w-full h-44 lg:h-56" src="../images/clanek1.jpg" alt="">
+                        <div class="p-4 pt-5 bg-white lg:h-32">
+                          <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                          <div class="h7 mt-2 2xl:mt-3 group-hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                        </div>
+                        <a class="stretched_link" href="article.html"></a>
+                      </div>
+                      <div class="relative overflow-hidden group hover:shadow-lg transition-shadow shadow-md lg:h-88">
+                        <img class="object-cover w-full h-44 lg:h-56" src="../images/clanek1.jpg" alt="">
+                        <div class="p-4 pt-5 bg-white lg:h-32">
+                          <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                          <div class="h7 mt-2 2xl:mt-3 group-hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                        </div>
+                        <a class="stretched_link" href="article.html"></a>
+                      </div>
+                      <div class="relative overflow-hidden group hover:shadow-lg transition-shadow shadow-md lg:h-88">
+                        <img class="object-cover w-full h-44 lg:h-56" src="../images/clanek1.jpg" alt="">
+                        <div class="p-4 pt-5 bg-white lg:h-32">
+                          <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                          <div class="h7 mt-2 2xl:mt-3 group-hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                        </div>
+                        <a class="stretched_link" href="article.html"></a>
+                      </div>
+                      <div class="relative overflow-hidden group hover:shadow-lg transition-shadow shadow-md lg:h-88">
+                        <img class="object-cover w-full h-44 lg:h-56" src="../images/clanek1.jpg" alt="">
+                        <div class="p-4 pt-5 bg-white lg:h-32">
+                          <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                          <div class="h7 mt-2 2xl:mt-3 group-hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                        </div>
+                        <a class="stretched_link" href="article.html"></a>
+                      </div>
+                      <div class="relative overflow-hidden group hover:shadow-lg transition-shadow shadow-md lg:h-88">
+                        <img class="object-cover w-full h-44 lg:h-56" src="../images/clanek1.jpg" alt="">
+                        <div class="p-4 pt-5 bg-white lg:h-32">
+                          <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                          <div class="h7 mt-2 2xl:mt-3 group-hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                        </div>
+                        <a class="stretched_link" href="article.html"></a>
+                      </div>
+                      <div class="relative overflow-hidden group hover:shadow-lg transition-shadow shadow-md lg:h-88">
+                        <img class="object-cover w-full h-44 lg:h-56" src="../images/clanek1.jpg" alt="">
+                        <div class="p-4 pt-5 bg-white lg:h-32">
+                          <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                          <div class="h7 mt-2 2xl:mt-3 group-hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                        </div>
+                        <a class="stretched_link" href="article.html"></a>
+                      </div>
+                      <div class="relative overflow-hidden group hover:shadow-lg transition-shadow shadow-md lg:h-88">
+                        <img class="object-cover w-full h-44 lg:h-56" src="../images/clanek1.jpg" alt="">
+                        <div class="p-4 pt-5 bg-white lg:h-32">
+                          <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                          <div class="h7 mt-2 2xl:mt-3 group-hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                        </div>
+                        <a class="stretched_link" href="article.html"></a>
+                      </div>
+                      <div class="relative overflow-hidden group hover:shadow-lg transition-shadow shadow-md lg:h-88">
+                        <img class="object-cover w-full h-44 lg:h-56" src="../images/clanek1.jpg" alt="">
+                        <div class="p-4 pt-5 bg-white lg:h-32">
+                          <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                          <div class="h7 mt-2 2xl:mt-3 group-hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                        </div>
+                        <a class="stretched_link" href="article.html"></a>
+                      </div>
+                   </div>
+                   <div class="text-white flex items-center space-x-3 mt-6 2xl:mt-8">
+                     <a href="#" class="bg-main-blue rounded py-1 px-3 hover:shadow-md hover:bg-dark-blue transition-all">1</a>
+                     <a href="#" class="bg-main-blue rounded py-1 px-3 hover:shadow-md hover:bg-dark-blue transition-all">2</a>
+                   </div>
+               </div> 
+            </section>
+            <aside class="hidden xl:block xl:w-1/4">
+                <div>
+                    <h6 class=" text-main-blue p-4 2xl:py-3.5">Další Novinky</h6>
+                    <div class="flex flex-col space-y-4 mb-4">
+                            <div class="shadow-md lg:h-88">
+                                <img class="object-cover w-full h-44 lg:h-52" src="../images/clanek1.jpg" alt="">
+                                <div class="p-4 pt-5 bg-white lg:h-36">
+                                    <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                                    <div class="h7  mt-2 2xl:mt-3 hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                                </div>
+                            </div>
+                            <div class="shadow-md lg:h-88">
+                                <img class="object-cover w-full h-44 lg:h-52" src="../images/clanek2.jpg" alt="">
+                                <div class="p-4 pt-5 bg-white lg:h-36">
+                                    <span class="p-1 text-xs rounded font-bold bg-main-red text-white 2xl:px-4">18.9.2021</span>
+                                    <div class="h7  mt-2 2xl:mt-3 hover:underline"><a href="#">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</a></div>
+                                </div>
+                            </div>
+                    </div>
+                    <a class="group uppercase w-max flex items-center text-sm text-main-blue font-bold border-2 border-main-blue p-1 rounded lg:self-end 2xl:py-2 2xl:px-6" href="#">Další články <img class="ml-2 transition-transform lg:group-hover:translate-x-3" src="../images/right-arrow.svg" alt="arrow"></a>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="relative bg-main-blue border-t-2 2xl:border-t-4 border-main-red">
+      <a href="index.html">
+        <img class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 object-contain transition-transform hover:scale-105" src="../images/logo_footer.png" alt="logo-footer">
+      </a>
+      <div class="px-3 pt-14 pb-8 text-center">
+        <p class="text-base text-white">Copyright © 2021 HC Děčín & <a class="hover:underline" href="https://esportsmedia.cz/">eSports.cz, s.r.o.</a></p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+  </body>

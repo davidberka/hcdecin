@@ -79,6 +79,9 @@
     .dropdown_menu li a {
         @apply border-b border-main-red pb-1 lg:py-2 w-full text-sm transition-colors lg:hover:text-main-red;
     }
+    .form_select {
+        @apply py-1 px-2 border border-main-blue focus:border-none focus:outline-none focus:ring-2 ring-main-blue rounded;
+    }
 }
 
 @layer utilities {
