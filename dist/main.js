@@ -4,6 +4,7 @@ const slideNav = document.querySelector(".navigation");
 
 burgerMenu.addEventListener("click", () => {
   slideNav.classList.toggle("menu_active");
+  burgerMenu.classList.toggle("active");
 });
 
 if (window.innerWidth < 1024) {
