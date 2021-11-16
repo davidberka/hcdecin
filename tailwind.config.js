@@ -22,6 +22,7 @@ module.exports = {
       height: {
         "22": "5.5rem",
         "88": "22rem",
+        "104": "32rem",
         "article-img": "47.4rem"
       },
       gridTemplateColumns: {
