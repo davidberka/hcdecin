@@ -62,9 +62,12 @@
     <main class="bg-gray-100">
         <div class="px-3 pt-8 2xl:pt-10 pb-16 xl:w-5/6 3xl:w-3/4 mx-auto xl:flex xl:space-x-6">
             <section class="md:w-3/4">
-                <div class="2xl:w-11/12 2xl:mx-auto">
-                    <h3 class="text-main-blue mb-4 2xl:mb-6">Diskuze</h3>
-                    <p class="pb-4 border-b">Pro psaní příspěvků do diskuze se musíte <a class="text-main-red underline" href="#">Přihlásit</a>. Pokud nemáte přihlašovací údaje, je nutné se nejprve <a class="text-main-red underline" href="#">Zaregistrovat</a>.</p>
+                <div class="2xl:w-11/12 2xl:mx-auto relative">
+                    <div class="flex items-center justify-between mb-4 2xl:mb-6">
+                      <h3 class="text-main-blue">Diskuze</h3>
+                      <button class="discussion_add w-10 h-10 flex justify-center items-center text-white text-xl bg-main-blue rounded-full hover:shadow-md hover:bg-dark-blue transition-all"><img src="../images/add.png" alt=""></button>
+                    </div>
+                    <!-- <p class="pb-4 border-b">Pro psaní příspěvků do diskuze se musíte <a class="text-main-red underline" href="#">Přihlásit</a>. Pokud nemáte přihlašovací údaje, je nutné se nejprve <a class="text-main-red underline" href="#">Zaregistrovat</a>.</p> -->
                     <div class="pt-4 flex flex-col space-y-3 2xl:space-y-6">
                         <div class="p-4 bg-white shadow">
                             <div class="flex space-x-3">
@@ -82,6 +85,18 @@
                             <h6 class="my-2 2xl:my-3">PODRUHÉ DOMA, DĚČÍN HOSTÍ JABLONEC. USPĚJE POPRVÉ PŘED SVÝMI DIVÁKY?</h6>
                             <p>Rád bych vyjádřil svou spokojenost při velmi vydařené a perfektně připravené akci: Pojď hrát hokej,ze dne 22.1.2019.Vidět ty rozzářené a šťastné trpaslíky na ledě,je něco úžasného a za to patří velké DÍKY všem trenérům,trenérkám a hráčům,kteří si na prcky udělali čas.S pozdravem a přáním pěkného dne Čížkovský David s rodinou</p>
                         </div>
+                    </div>
+                    <div class="discussion z-40 bg-black opacity-50 fixed inset-0"></div>
+                    <div class="discussion z-50 bg-main-blue p-4 2xl:p-6 w-max rounded absolute top-1/3 md:top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                      <div class="flex justify-end pb-4">
+                        <img class="discussion_close rotate-45 w-5 h-5 cursor-pointer hover:scale-105 transition-transform" src="../images/add.png" alt="">
+                      </div>
+                      <form class="flex flex-col space-y-3">
+                        <input type="text" placeholder="Jméno" class="w-60 2xl:w-72 placeholder-main-blue placeholder-opacity-90 px-3 py-1 rounded focus:outline-none focus:ring-1 ring-white">
+                        <input type="text" placeholder="Nadpis" class="w-60 2xl:w-72 placeholder-main-blue placeholder-opacity-90 px-3 py-1 rounded focus:outline-none focus:ring-1 ring-white">
+                        <textarea name="" id="" rows="3" placeholder="Zpráva" class="w-80 placeholder-main-blue placeholder-opacity-90 px-3 py-1 rounded focus:outline-none focus:ring-1 ring-white"></textarea>
+                        <button type="submit" class="w-max bg-main-red text-white rounded py-1 px-3 hover:shadow-md hover:bg-red-700 transition-all">Odeslat</button>
+                      </form>
                     </div>
                 </div>
             </section>

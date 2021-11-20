@@ -40,6 +40,20 @@ if (searchBtn) {
 }
 // SEARCH INPUT - END
 
+// DISCUSSION - START
+const discussionItems = document.querySelectorAll(".discussion");
+const discussionAdd = document.querySelector(".discussion_add");
+const discussionClose = document.querySelector(".discussion_close")
+
+discussionAdd.addEventListener('click', () => {
+  discussionItems.forEach(item => item.classList.add('active'));
+})
+
+discussionClose.addEventListener('click', () => {
+  discussionItems.forEach(item => item.classList.remove('active'));
+})
+// DISCUSSION - END 
+
 // JQUERY - START
 $(document).ready(function () {
   $('.js-select').select();

@@ -94,6 +94,12 @@
     .form_select {
         @apply py-1 px-2 border border-main-blue focus:border-none focus:outline-none focus:ring-2 ring-main-blue rounded;
     }
+    .discussion {
+        @apply hidden;
+    }
+    .discussion.active {
+        @apply block;
+    }
 }
 
 @layer utilities {
