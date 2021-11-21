@@ -24,6 +24,15 @@
     p {
         @apply text-lg leading-7;
     }
+    .typography table, .typography p {
+        @apply mb-4 2xl:mb-6;
+    }
+    .typography table tr th {
+        @apply py-1 px-4 bg-main-blue text-white border-r last:border-r-0 border-white;
+    }
+    .typography table tr td {
+        @apply py-1 px-4 border-r border-b last:border-r-0 border-main-blue;
+    }
 }
 
 @layer components {
