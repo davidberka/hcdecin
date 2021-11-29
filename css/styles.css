@@ -59,7 +59,7 @@
         @apply hidden xl:block absolute -left-4 2xl:-left-6 top-1/2 -translate-x-1/2 -translate-y-1/2 text-main-red;
     }
     .burger {
-        @apply cursor-pointer z-50 px-3 lg:hidden;
+        @apply cursor-pointer z-40 px-3 lg:hidden;
     }
     .burger div {
         @apply transition-transform;
